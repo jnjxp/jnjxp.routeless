@@ -1,0 +1,31 @@
+{
+    "name": "jnjxp/routeless",
+    "description": "Aura\\Router failed routing responder",
+    "homepage":"https://github.com/jnjxp/jnjxp.routeless",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jake johns",
+            "email": "jake@jakejohns.net"
+        }
+    ],
+    "require": {
+        "psr/http-message": "^1.0",
+        "aura/router": "^3.0"
+    },
+    "require-dev":{
+        "zendframework/zend-diactoros": "~1.0",
+        "radar/adr":"~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jnjxp\\Routeless\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jnjxp\\Routeless\\":"tests/",
+             "Aura\\Di\\": "vendor/aura/di/tests/"
+        }
+    }
+}
